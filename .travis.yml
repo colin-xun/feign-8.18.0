@@ -1,0 +1,23 @@
+language: java
+sudo: false
+notifications:
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/110a7c0daf817ba48ccc
+    on_success: change
+    on_failure: always
+    on_start: false
+jdk:
+- oraclejdk8
+install: true
+script: ./buildViaTravis.sh
+cache:
+  directories:
+  - $HOME/.gradle/caches/
+  - $HOME/.gradle/wrapper/
+env:
+  global:
+  - secure: YIuMCulUHkCrZDzrIZj+ni+QoQYT3H5C6z32FDeRb4HD9GQzuYQ/+dLWZ6p/X2vkPv1FBlXYb6hpw9PvRLPkGqic0oKX3kMj5LmaXw6nmrq5jvmB0qAjoQ0ukhSUzQVK+43A9aNrAEsHRdrESjleeR1ISeQsUdkikaSs2D1+gQI=
+  - secure: l/1XVG7NHsVwQONy/NF4PlFOFEC2QzE54wFdrTvQzMi6fZrit4C27NW9v0NUohtHjLOVQyx0uLfatt/ZV8gtS+fzfaJj4g9G6Gigv2JdRI5aFn+RPCzU5dioZNBaLB5y4pLkMTnbhLa9wLZxCsmbmG1unY18pF5fHgt/nXzFf4w=
+  - secure: QaEFxVi7lEef0bE8gUWdA7sHT7GJtpiQKOp6UwRdrPQADz+Xg47D2aBr15HmPyo/Ldn6Vm+QSCia+JrRZFCb8NTcBR7u8ZvNzY7I4RXdxTRt54eiyNT4EsqG7vLIECBoKE2CJf1XYv8PO+2Cxsd7D5STzpgtKM3z59h+J0wPmHw=
+  - secure: VFv9NqL3mGQnIjLRZkTmMlnNCtWu2co8V54oQYSTgYT3HmR6ootn/vd6YL4p48abHlBbS3chGefrfaoY5SkOD6oewwNimOPBn+u2uIsBKfL3E6ROrO6Enf0YdIPHBmhXT8Lasmc0ZMqkGx32n0JwCou6Md8c04i/wCp62QsKXbk=
